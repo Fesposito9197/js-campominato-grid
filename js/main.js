@@ -13,20 +13,28 @@ function renderBoard(cellNumber) {
 const play = document.getElementById('play');
 const level = document.getElementById('level');
 const boardContainer = document.querySelector(".board")
-const maxNumber = level.value;
-console.log( level.value )
+let maxNumber = "";
+
 boardContainer.innerHTML = "";
 
 
 play.addEventListener("click" , function() {
     if(level.value === "100"){
+        maxNumber = level.value
         renderBoard(maxNumber)
-        
+        console.log( level.value )
+        console.log( maxNumber )
         
     }else if (level.value === "81"){
+        maxNumber = level.value
         renderBoard(maxNumber)
+        console.log( level.value )
+        console.log( maxNumber )
     }else{
+        maxNumber = level.value
         renderBoard(maxNumber)
+        console.log( level.value )
+        console.log( maxNumber )
     }
     //     if (level.value === "easy") {
     //         for (let i = 1; i <= 100; i++) {
