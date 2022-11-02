@@ -13,7 +13,7 @@ function renderBoard(cellNumber) {
 const play = document.getElementById('play');
 const level = document.getElementById('level');
 const boardContainer = document.querySelector(".board")
-let maxNumber = "";
+
 
 boardContainer.innerHTML = "";
 
