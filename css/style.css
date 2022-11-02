@@ -34,13 +34,29 @@ main{
     height: 31.25rem;
     width: 31.25rem;
 }
-
-.board-number{
-    width: calc(100% / 10);
-    height: calc(100% / 10);
+.cell{
     border: 1px solid black;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.board-number-100{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+}
+
+.board-number-81{
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+
+.board-number-49{
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+}
+
 .number-selected{
     background-color: #007fff;
 }

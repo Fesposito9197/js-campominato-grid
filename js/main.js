@@ -2,7 +2,8 @@ function renderBoard(cellNumber) {
     for (let i = 1; i <= cellNumber ; i++) {
         const boardCell = document.createElement("div");
         boardCell.innerHTML = i;
-        boardCell.classList.add("board-number");
+        boardCell.classList.add("cell");
+        boardCell.classList.add("board-number-"+cellNumber);
         boardCell.addEventListener("click" , function () {
             this.classList.add("number-selected");
         })
@@ -14,12 +15,9 @@ const play = document.getElementById('play');
 const level = document.getElementById('level');
 const boardContainer = document.querySelector(".board")
 
-
-boardContainer.innerHTML = "";
-
-
 play.addEventListener("click" , function() {
-    
+    //svuoto il boardContainer
+    boardContainer.innerHTML=""
     renderBoard(level.value)
    
     
