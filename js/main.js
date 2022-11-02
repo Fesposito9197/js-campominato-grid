@@ -3,7 +3,7 @@ function renderBoard(cellNumber) {
         const boardCell = document.createElement("div");
         boardCell.innerHTML = i;
         boardCell.classList.add("cell");
-        boardCell.classList.add("board-number-"+cellNumber);
+        boardCell.classList.add(`board-number-${cellNumber}`);
         boardCell.addEventListener("click" , function () {
             this.classList.add("number-selected");
         })
