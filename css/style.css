@@ -6,3 +6,35 @@
     margin: 0;
     padding: 0;
 }
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header , footer{
+    padding: 1rem;
+}
+main{
+    display: flex;
+    background-color: #7fffd4;
+    flex-grow: 1;
+    
+}
+
+
+
+.board{
+    background-color: antiquewhite;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin: auto;
+    height: 31.25rem;
+    width: 31.25rem;
+}
+
+.board-number{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: 1px solid black;
+}
