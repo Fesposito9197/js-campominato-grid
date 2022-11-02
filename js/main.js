@@ -19,23 +19,25 @@ boardContainer.innerHTML = "";
 
 
 play.addEventListener("click" , function() {
-    if(level.value === "100"){
-        maxNumber = level.value
-        renderBoard(maxNumber)
-        console.log( level.value )
-        console.log( maxNumber )
+    
+    renderBoard(level.value)
+    // if(level.value === "100"){
         
-    }else if (level.value === "81"){
-        maxNumber = level.value
-        renderBoard(maxNumber)
-        console.log( level.value )
-        console.log( maxNumber )
-    }else{
-        maxNumber = level.value
-        renderBoard(maxNumber)
-        console.log( level.value )
-        console.log( maxNumber )
-    }
+    //     renderBoard(maxNumber)
+    //     console.log( level.value )
+    //     console.log( maxNumber )
+        
+    // }else if (level.value === "81"){
+        
+    //     renderBoard(maxNumber)
+    //     console.log( level.value )
+    //     console.log( maxNumber )
+    // }else{
+        
+    //     renderBoard(maxNumber)
+    //     console.log( level.value )
+    //     console.log( maxNumber )
+    // }
     //     if (level.value === "easy") {
     //         for (let i = 1; i <= 100; i++) {
     //             const boardCell = document.createElement("div");
